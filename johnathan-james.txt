@@ -1,0 +1,197 @@
+https://codepen.io/vitaetmort/pen/BaKNJeO
+
+    1. What is Semantic HTML?
+
+    Semantic HTML is HTML that has meaning. The tags for semantic html can be figured out by name, i.e., <header>.
+
+    2. What is HTML used for?
+
+    HTML is used to for web development. It is designed to display information in a graphical structure.
+
+    3. What is an attribute and where do we put it? 
+
+    An attribute is a special tag which suplements data into elements.
+
+    4. What is the h1 tag used for? How many times should I use it on a page?
+
+    The h1 tag is used for important headers. It should only be used once per page as it primarily used as the main description of the page.
+    
+    5. Name two tags that have required attributes
+    
+    The <a> anchor tag requires the 'href' attribute and the <img> image tag requires the 'src' attribute to point to 
+    6. What do we put in the head of our HTML document?
+
+    The head tag of a document is used for metadata. Metadata includes elements such as title and link. 
+    
+    7. What is an id? 
+    
+    An id is a title that can only appear on one element.
+    
+    8. What elements can I add an id to? 
+
+    Id's can be added to all types of elements
+
+    9. How many times can I use the same id on a page? 
+
+    An id can be used one time on a page.
+
+    10. What is a class? 
+
+    A class is an attribute that can be applied to multiple elements.
+
+    11. What elements can I add a class to? 
+
+    All elements can have classes.
+
+    12. How many times can I use the same class on a page?
+
+    A class be used as many times as you would like on a page.
+
+    13. How do I get my link to open in a new tab?
+
+    A link can be set to open in a new tab by inserting a **target:"_blank"** attribute in an anchor tag.
+
+    14. What is the alt attribute in the image tag used for? 
+    
+    The alt attribute in the image tag is used to give a description of the image being pointed to. It is used by screen readers 
+    for accessibility.
+    
+    15. How do I reference an id?
+
+    An id is referenced by a hashtag.
+
+    16. What is the difference between a section and a div?
+
+    A section is semantic HTML used to describe a certain location of page. A div is used as a container to add style and or spacing.
+
+    17. What is CSS used for? 
+
+    CSS is used for styling and laying out a web page.
+
+    18. How to we select an element? Example - every h2 on the page
+    
+    To select an element in CSS we call the element followed by an open curly brace, a property, its value, a semicolon, and 
+    finally a closing curly brace, 
+    i.e., 
+    
+        h2 { 
+            color: yellow; 
+        }
+    
+    19. What is the difference between a class and an id? - Give me an example of when I might use each one
+
+    An id is used to identify one element while a class can be used to identify many elements. An id could be used
+    for a h1 tag since it is only used once per page. A class could be used for div containers which have similar properties.
+    
+    20. How do we select classes in CSS?
+
+    Classes are selected in CSS by a dot followed by its name, i.e., **.foo**.
+
+    21. How do we select a p element with a single class of “human””?
+
+        p .human {
+
+        }
+
+    22. What is a parent child selector? When would this be useful?
+
+    The parent child selector is a selector of a parent's child element, the nested element. 
+    This would be useful to select the first nested element for a number of parent elements.
+
+    23. How do you select all links within a div with the class of sidebar?
+    
+        div .sidebar {
+            
+        }     
+    
+    24. What is a pseudo selector?
+    
+    It is a keyword added to a selector that sets out a special condition to an element.
+    
+    25. What do we use the change the spacing between lines?
+
+    Line heights can be adjusted in CSS with the line-height property.
+
+    26. What do we use to change the spacing between letters?
+
+    Letter spacing can be changed using the CSS letter-spacing property.
+
+    27. What do we use to to change everything to CAPITALS? lowercase? Capitalize?
+
+    Text case can be changed using the text-transform property in CSS as follows:
+        text-transform: uppercase;
+        text-transform: lowercase;
+        text-transform: capitalize;
+
+    28. How do I add a 1px border around my div that is dotted and black?
+
+        div {
+            border-width: 1px;
+            border-style: dotted;
+            border-color: black;
+        }
+
+    29. How do I select everything on the page? 
+
+        * {
+
+        }
+
+    30. How do I write a comment in CSS?
+
+    Comments in css are written by using /* comment */ in CSS document.
+
+    31. How do I find out what file I am in, when I am using the command line? 
+
+    In terminal type **pwd** (print working directory)
+
+    32. Using the command line - how do I see a list of files/folders in my current folder?
+
+    In terminal type **$ ls**.
+
+    33. How do I remove a file via the command line? Why do I have to be careful with this? 
+
+    To remove a file via the command line type:
+
+    **$ rm filename**
+
+    You have to be careful with this command since it does not provide a safety prompt asking if you are sure you want to do so, nor does it 
+    allow you to undo the action like with the recycling bin in Windows.
+
+    34. Why should I use version control? 
+
+    Version control should be used by developers since it allows you to track and save changes in versions, revert to previous versions 
+    if needed for debugging, and let other developers work on their own branches of the software simultaenously.
+
+    35. How often should I commit to github?
+
+    Git commits should be run everytime a major or significant change has been made to your project.
+
+    36. What is the command we would use to push our repo up to github? 
+
+    The git command to push our repo to github is **$ git push**
+
+    37. Walk me through Lambda's git flow. 
+
+    First you need to fork your own version of the repository. Then a TL is added to the collaborator to the project. 
+    Afterwards clone the repository by copying the github url. Open the terminal and cd into your desired project directory. 
+    Run $ git clone and paste url, then hit enter. Then you have to cd into directory of git project. Now you have to create your own 
+    branch for the project by typing: **$ git checkout -b ‘firstname-lastname’**. Then you can begin working on your project. Once changes 
+    have been made on your branch you will have to add the changes to repository. This is done with **$ git add filename**. Alternatively, 
+    you can add all files by typing **$ git add . **. Then a commit has to be made to save changes. Included in the commit needs to be a message 
+    describing what work was done. The command for committing with a message is: **git committ -m "descriptive message of what was done". After 
+    the commit you will need to push to the repository. This is done with the **$ git push -u origin branch-name** command. After the 
+    add/commit/push you will need to do a pull request on github. Click on pull request, change base repository branch to your branch, 
+    compare the base to your branch and add your TL to reviewer. Finally create the pull request.
+
+
+Stretch Questions
+
+    1. What is the difference between an inline element and a block element?
+    2. What happens when an element is positioned absolutely? 
+    3. How do I make an element take up only the amount of space it needs but also have the ability to give it a width? 
+    4. Name 3 elements that are diplay block by default, 2 elements that are display inline by default and 1 element that is display 
+    inline-block by default
+
+    5. In your own words, explain the box model. What is the "fix" for the box model, in other words, how do we make all elements 
+    respect the width we've given them? 
