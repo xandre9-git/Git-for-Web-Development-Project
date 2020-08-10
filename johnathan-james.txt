@@ -18,7 +18,8 @@ https://codepen.io/vitaetmort/pen/BaKNJeO
     
     5. Name two tags that have required attributes
     
-    The <a> anchor tag requires the 'href' attribute and the <img> image tag requires the 'src' attribute to point to 
+    The <a> anchor tag requires the 'href' attribute and the <img> image tag requires the 'src' attribute to point to location of the link.
+
     6. What do we put in the head of our HTML document?
 
     The head tag of a document is used for metadata. Metadata includes elements such as title and link. 
@@ -29,11 +30,11 @@ https://codepen.io/vitaetmort/pen/BaKNJeO
     
     8. What elements can I add an id to? 
 
-    Id's can be added to all types of elements
+    Id's can be added to all types of elements.
 
     9. How many times can I use the same id on a page? 
 
-    An id can be used one time on a page.
+    An id can be used only one time on a page.
 
     10. What is a class? 
 
@@ -72,6 +73,7 @@ https://codepen.io/vitaetmort/pen/BaKNJeO
     
     To select an element in CSS we call the element followed by an open curly brace, a property, its value, a semicolon, and 
     finally a closing curly brace, 
+
     i.e., 
     
         h2 { 
@@ -96,7 +98,7 @@ https://codepen.io/vitaetmort/pen/BaKNJeO
     22. What is a parent child selector? When would this be useful?
 
     The parent child selector is a selector of a parent's child element, the nested element. 
-    This would be useful to select the first nested element for a number of parent elements.
+    This would be useful to select the specified nested element for a number of parent elements.
 
     23. How do you select all links within a div with the class of sidebar?
     
@@ -106,7 +108,7 @@ https://codepen.io/vitaetmort/pen/BaKNJeO
     
     24. What is a pseudo selector?
     
-    It is a keyword added to a selector that sets out a special condition to an element.
+    A pseudo selector is a keyword added to a selector that sets out a special condition to an element.
     
     25. What do we use the change the spacing between lines?
 
@@ -119,6 +121,7 @@ https://codepen.io/vitaetmort/pen/BaKNJeO
     27. What do we use to to change everything to CAPITALS? lowercase? Capitalize?
 
     Text case can be changed using the text-transform property in CSS as follows:
+
         text-transform: uppercase;
         text-transform: lowercase;
         text-transform: capitalize;
@@ -139,11 +142,11 @@ https://codepen.io/vitaetmort/pen/BaKNJeO
 
     30. How do I write a comment in CSS?
 
-    Comments in css are written by using /* comment */ in CSS document.
+    Comments in css are written by using /* comment */ in a CSS document.
 
     31. How do I find out what file I am in, when I am using the command line? 
 
-    In terminal type **pwd** (print working directory)
+    In terminal type **$ pwd** (print working directory)
 
     32. Using the command line - how do I see a list of files/folders in my current folder?
 
@@ -153,14 +156,14 @@ https://codepen.io/vitaetmort/pen/BaKNJeO
 
     To remove a file via the command line type:
 
-    **$ rm filename**
+    **$ rm filename**.
 
-    You have to be careful with this command since it does not provide a safety prompt asking if you are sure you want to do so, nor does it 
-    allow you to undo the action like with the recycling bin in Windows.
+    You have to be careful with this command since it does not provide a safety prompt asking if you are sure you want to delete the file, nor does it 
+    allow you to undo the action like with the Recycling Bin in Windows.
 
     34. Why should I use version control? 
 
-    Version control should be used by developers since it allows you to track and save changes in versions, revert to previous versions 
+    Version control should be used by developers since it allows them to track and save changes in versions, revert to previous versions 
     if needed for debugging, and let other developers work on their own branches of the software simultaenously.
 
     35. How often should I commit to github?
@@ -173,15 +176,15 @@ https://codepen.io/vitaetmort/pen/BaKNJeO
 
     37. Walk me through Lambda's git flow. 
 
-    First you need to fork your own version of the repository. Then a TL is added to the collaborator to the project. 
-    Afterwards clone the repository by copying the github url. Open the terminal and cd into your desired project directory. 
-    Run $ git clone and paste url, then hit enter. Then you have to cd into directory of git project. Now you have to create your own 
+    First you need to fork your own version of the repository. Then a TL is added as a collaborator to the project. 
+    Afterwards you need to clone the repository by copying the github url. Open the terminal and cd into your desired project directory. 
+    Run **$ git clone url** then hit enter. Then you have to cd into directory of git project. Now you have to create your own 
     branch for the project by typing: **$ git checkout -b ‘firstname-lastname’**. Then you can begin working on your project. Once changes 
-    have been made on your branch you will have to add the changes to repository. This is done with **$ git add filename**. Alternatively, 
+    have been made on your branch, you will have to add the changes to repository. This is done with **$ git add filename**. Alternatively, 
     you can add all files by typing **$ git add . **. Then a commit has to be made to save changes. Included in the commit needs to be a message 
     describing what work was done. The command for committing with a message is: **git committ -m "descriptive message of what was done". After 
     the commit you will need to push to the repository. This is done with the **$ git push -u origin branch-name** command. After the 
-    add/commit/push you will need to do a pull request on github. Click on pull request, change base repository branch to your branch, 
+    add/commit/push is completed you will need to do a pull request on github. Click on pull request, change base repository branch to your branch, 
     compare the base to your branch and add your TL to reviewer. Finally create the pull request.
 
 
