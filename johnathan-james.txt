@@ -227,3 +227,31 @@ Stretch Questions
     the width given to it.
 
 
+Git Stretch Tasks
+
+1. Research and understand what a merge conflict is and how to resolve it.
+
+A merge conflict happens when Git is not able to to automatically resolve differences in code between two commits. Using git status can help identify merge
+conflicts as well as editing the conflicted file.
+
+
+2. Research the Git commands pull, rebase, merge. These commands will allow you to bring in changes that other developers push to the main branch.
+
+The git pull command pulls content from a remote repository and updates the local repository to match the remote repository's content.
+The git rebase command integrates changes from one branch to another.
+The git merge command joins two or more development histories together.
+
+3. Research the Git commands reset , revert, clean. These commands will allow you to go back and amends previous commits you have made.
+
+The git reset command is to undo local changes to the state of a git repository.
+The git revert command is to undo some existing commits.
+The git clean command is used to remove untracked files from the working tree.
+
+Research and set up a Graphical User Interface (GUI) Git console.
+
+Downloaded and setup GitHub Desktop.
+
+Research and setup SSH keys with GitHub, so that you do not need to input your username/password each time you push.
+
+SSH keys setup through GitBash.
+
